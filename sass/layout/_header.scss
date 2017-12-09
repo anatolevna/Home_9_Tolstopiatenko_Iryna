@@ -1,0 +1,164 @@
+.nav-container {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.site-header {
+    background-color: $red;
+    min-height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+    max-width: 900px;
+    padding-left: 0;
+    padding-top: 24px;
+    margin: 0 auto;
+
+    li {
+        display: inline-block;
+        margin-right: 10px;
+
+        a {
+            padding: 5px 15px;
+            text-decoration: none;
+            color: $white;
+            font: normal 100% $sans-droid;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 44px;
+            text-transform: uppercase;
+            letter-spacing: 0.65px;
+            height: 45px;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                border-bottom: 3px solid $white;
+                color: $white;
+                text-shadow: none;
+            }
+
+            @media screen and (max-width: 620px) {
+                a {
+                    width: 49%;
+                }
+            }
+
+            @media screen and (max-width: 300px) {
+                a {
+                    width: 100%;
+                }
+            }
+        }
+
+        &:hover a {
+            color: transparent;
+            text-shadow: 0 0 1px $black;
+        }
+
+    }
+
+}
+
+.main-menu ul {
+    display: none;
+}
+
+.main-menu li:hover > ul {
+    display: block;
+}
+
+.logo {
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+.right-list {
+    max-width: 400px;
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+}
+
+.social {
+
+    img {
+        vertical-align: middle;
+    }
+
+    a {
+        display: inline-block;
+        height: 20px;
+        margin-right: 15px;
+    }
+
+    p {
+        display: inline;
+        color: $white;
+        font: normal 100% $sans-open;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-right: 15px;
+    }
+
+    &:hover a {
+        color: transparent;
+        text-shadow: 0 0 1px $black;
+    }
+
+    a:hover {
+        border-bottom: 3px solid $white;
+        color: $white;
+        text-shadow: none;
+    }
+
+    li:hover > ul {
+        display: block;
+    }
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.purchase-ticket {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+
+    .ticket {
+        list-style: none;
+        margin: auto;
+        text-decoration: none;
+        color: $red;
+        font: normal 100% $sans-droid;
+        /*font-family: "Droid Sans", sans-serif;*/
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        text-align: center;
+        @include border-radius-white;
+    }
+}
+
+

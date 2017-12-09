@@ -1,0 +1,53 @@
+
+.popular-insta {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 24px;
+}
+
+.popular h4, .insta h4 {
+    color: $hex-gray;
+    font: normal 100% $serif-oswald;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.popular p, .insta p {
+    color: $red;
+    font: normal 100% $cursive-great;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    font-size: 32px;
+    line-height: 30px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.list-song li {
+    display: block;
+    width: 33%;
+    float: left;
+    color: $hex-gray;
+    font: normal 100% $sans-droid;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+.list-insta li {
+    float: left;
+    list-style: none;
+    padding-right: 10px;
+    padding-top: 24px;
+    margin: 0 auto;
+}

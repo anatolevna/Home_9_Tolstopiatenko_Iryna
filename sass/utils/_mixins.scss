@@ -1,0 +1,30 @@
+@mixin border-radius-white {
+    border-radius: 30px;
+    padding: 15px 34px;
+    background-color: $white;
+
+}
+@mixin border-radius-red {
+    border-radius: 30px;
+    padding: 15px 34px;
+    background-color: $red;
+
+}
+@mixin primery-color {
+    color: #333;
+}
+
+@mixin linx ($link, $visit, $hover, $active) {
+    a {
+        color: $link;
+        &:visited {
+            color: $visit;
+        }
+        &:hover {
+            color: $hover;
+        }
+        &:active {
+            color: $active;
+        }
+    }
+}
