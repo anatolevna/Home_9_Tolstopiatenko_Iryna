@@ -1,9 +1,406 @@
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../../fonts/DroidSans.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/DroidSans.woff') format('woff'),
+    url('../../fonts/DroidSans.ttf') format('truetype'),
+    url('../../fonts/DroidSans.svg#DroidSans') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
-$sans-droid: 'Droid Sans', sans-serif;
-$sans-open: 'Open Sans', sans-serif;
-$serif-oswald: 'Oswald', sans-serif;
-$cursive-great: 'Great Vibes', cursive;
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../../fonts/DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/DroidSans-Bold.woff') format('woff'),
+    url('../../fonts/DroidSans-Bold.ttf') format('truetype'),
+    url('../../fonts/DroidSans-Bold.svg#DroidSans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
 
-$mono: "Menlo", "Fira Mono", monospace;
-$heading-font-family: "Helvetica Neue", Arial, sans-serif;
+@font-face {
+    font-family: 'Oswald-Heavy';
+    src: url('../../fonts/Oswald-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/Oswald-Heavy.woff') format('woff'),
+    url('../../fonts/Oswald-Heavy.ttf') format('truetype'),
+    url('../../fonts/Oswald-Heavy.svg#Oswald-Heavy') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 
+//1
+
+.rock-with-preview {
+    margin: auto;
+    max-width: 552px;
+    width: 100%;
+    padding: 90px 0 0 0;
+    text-align: center;
+    h1 {
+        margin: 0 0 5px;
+        padding: 0;
+        font: 400 116px/1 $sans-heavy;
+        color: $primary-bg-color;
+    }
+    span {
+        padding: 0;
+        margin: 0;
+        font: 400 80px/1 $cursive-great;
+        color: $second-color;
+        text-align: center;
+    }
+}
+
+.rock-with {
+    margin-bottom: 39px;
+    h1 {
+        margin: 0 0 5px 0;
+        padding: 0;
+        font: 400 32px/0.97 $serif-oswald;
+        color: $second-color;
+        text-transform: uppercase;
+    }
+    span {
+        margin: 0;
+        padding: 0;
+        font: 400 32px/0.97 $cursive-great;
+        color: $primary-bg-color;
+    }
+}
+
+/*.rock-with-preview {
+    max-width: 552px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 90px;
+
+    h1 {
+        color: $primary-bg-color;
+        font: normal 100% $serif-oswald;
+        font-size: 116px;
+        line-height: 85.6px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: auto;
+        span {
+            color: $botton-background;
+            font: normal 100% $cursive-great;
+            font-size: 80px;
+            line-height: 160.5px;
+            margin: auto;
+        }
+    }
+}
+*/
+//2
+.intro-members h2 {
+    color: $botton-background;
+    font: normal 100% $serif-oswald;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: auto;
+    padding-top: 90px;
+    span {
+        color: $primary-bg-color;
+        font: normal 100% $cursive-great;
+        letter-spacing: 3.2px;
+        font-size: 30px;
+        line-height: 30px;
+        margin: auto;
+        padding-top: 20px;
+    }
+}
+
+.text-card {
+    h5 {
+        padding: 0;
+        margin: 0 0 5px 0;
+        font: 400 22px/0.97 $serif-oswald;
+        color: $main-color;
+    }
+
+    p {
+        padding: 0;
+        margin: 0 0 25px 0;
+        font: 400 16px/0.97 $sans-droid;
+        color: $main-color;
+    }
+}
+
+//3
+.upcoming h2 {
+    color: $botton-background;
+    font: normal 100% $serif-oswald;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: auto;
+    padding-top: 90px;
+    span {
+        color: $primary-bg-color;
+        font: normal 100% $cursive-great;
+        font-weight: 400;
+        letter-spacing: 3.2px;
+        font-size: 32px;
+        line-height: 30px;
+        margin: auto;
+        padding-top: 20px;
+    }
+}
+
+/*.list {
+    list-style: none;
+    color: $hex-gray;
+    font: normal 100% $sans-droid;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.list h3 {
+    color: $hex-gray;
+    font: normal 100% $serif-oswald;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.video {
+    float: right;
+    h2 {
+        color: $hex-gray;
+        font: normal 100% $serif-oswald;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        text-align: left;
+        margin: auto;
+        padding-top: 90px;
+    }
+    p {
+        color: $primary-bg-color;
+        font: normal 100% $cursive-great;
+        font-weight: 400;
+        letter-spacing: 3.2px;
+        font-size: 32px;
+        line-height: 30px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    iframe {
+        padding-top: 25px;
+    }
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.ticket {
+    @include border-radius-red;
+    list-style: none;
+    margin: auto;
+    text-decoration: none;
+    color: $main-color;
+    font: normal 100% $sans-droid;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}*/
+
+//4
+.cantus-founder {
+    max-width: 556px;
+    padding: 0;
+    vertical-align: middle;
+    text-align: left;
+    padding-top: 86px;
+    padding-left: 110px;
+    color: $main-color;
+
+    h4 {
+        font: normal 100% $serif-oswald;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    p {
+        font: normal 100% $sans-droid;
+        font-size: 22px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    a {
+        margin: auto;
+        text-decoration: none;
+        color: $primary-bg-color;
+        font: normal 100% $sans-droid;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        text-align: center;
+        @include border-radius-white;
+    }
+    span {
+        font: normal 100% $cursive-great;
+        font-size: 65px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+//5
+.popular h4, .insta h4 {
+    color: $botton-background;
+    font: normal 100% $serif-oswald;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.popular p, .insta p {
+    color: $primary-bg-color;
+    font: normal 100% $cursive-great;
+    font-weight: 400;
+    letter-spacing: 3.2px;
+    font-size: 32px;
+    line-height: 30px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.list-song li {
+    display: block;
+    width: 33%;
+    float: left;
+    color: $botton-background;
+    font: normal 100% $sans-droid;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+.heading-preview {
+    margin-bottom: 90px;
+    .title-preview {
+        margin: 0 0 5px;
+        padding: 0;
+        font: 400 116px/1 $sans-heavy;
+        color: $primary-bg-color;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+        font: 400 80px/1 $cursive-great;
+        color: $botton-background;
+        text-align: center;
+    }
+}
+
+.heading {
+    margin-bottom: 39px;
+    .title-section {
+        margin: 0 0 5px 0;
+        padding: 0;
+        font: 400 32px/0.97 $serif-oswald;
+        color: $botton-background;
+        text-transform: uppercase;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        font: 400 32px/0.97 $cursive-great;
+        color: $primary-bg-color;
+    }
+}
+
+.introducing-section-slider {
+    .card {
+        .text-card {
+            h5 {
+                padding: 0;
+                margin: 0 0 5px 0;
+                font: 400 22px/0.97 $serif-oswald;
+                color: $main-color;
+            }
+
+            p {
+                padding: 0;
+                margin: 0 0 25px 0;
+                font: 400 16px/0.97 $sans-droid;
+                color: $main-color;
+            }
+        }
+    }
+}
+
+.section-posts {
+    .title-post {
+        padding: 0;
+        margin: 0 0 5px 0;
+        font: 500 32px/0.97 $serif-oswald;
+        color: $main-color;
+        text-transform: uppercase;
+    }
+    p {
+        max-width: 556px;
+        padding: 0;
+        margin: 0 0 45px 0;
+        font: 400 22px/0.97 $sans-droid;
+        color: $main-color;
+        span {
+            font: 400 65px/0.97 $cursive-great;
+        }
+    }
+}
+
+.official-apps {
+    &-title {
+        padding: 0;
+        margin: 0 0 9px 0;
+        font: 500 32px/1.5 $serif-oswald;
+        color: $main-color;
+    }
+    p {
+        padding: 0;
+        margin: 0 0 40px 0;
+        font: 400 22px/1.4 $sans-droid;
+        color: $main-color;
+    }
+}
+
+.footer {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}

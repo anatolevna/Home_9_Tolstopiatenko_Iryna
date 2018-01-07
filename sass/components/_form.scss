@@ -1,0 +1,40 @@
+
+.form-container {
+     margin: 0 auto;
+     max-width: 530px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     border-bottom: 4px solid #999999;
+     .form-group {
+         position: relative;
+         width: 100%;
+         input {
+             display: block;
+             width: 80%;
+             padding: 19px 10px 19px 0;
+             color: $second-color;
+             border: none;
+             @include appearance (none);
+             outline: none;
+         }
+         label {
+             color: $second-color;
+             position:absolute;
+             pointer-events:none;
+             left: 0;
+             top: 50%;
+             transform: translateY(-50%);
+             @include transition(0.3s ease all);
+         }
+         input:focus + label {
+             top: 5px;
+             font-size: 13px;
+         }
+     }
+     .battons {
+         @include appearance (none);
+         border: none;
+         background: none;
+     }
+ }

@@ -1,0 +1,46 @@
+
+*{
+    font-family: $serif-oswald;
+}
+.b-container{
+    width:200px;
+    height:150px;
+    margin:0 auto;
+    padding:10px;
+    font-size:30px;
+    color: $main-color;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left: 0;
+}
+.b-popup .b-popup-content{
+    margin:40px auto 0 auto;
+    width: 500px;
+    height: 300px;
+    padding:10px;
+    background-color: $botton-background;
+    border-radius:5px;
+    box-shadow: 0 0 10px $second-color;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    background: #000;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+

@@ -1,3 +1,11 @@
+.site-header {
+    background-color: $primary-bg-color;
+    min-height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .nav-container {
     max-width: 1920px;
     width: 100%;
@@ -8,18 +16,9 @@
     align-items: center;
 }
 
-.site-header {
-    background-color: $red;
-    min-height: 100px;
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 0;
-}
-
 .main-menu {
     display: flex;
     justify-content: flex-start;
-    width: 40%;
     max-width: 900px;
     padding-left: 0;
     padding-top: 24px;
@@ -28,11 +27,10 @@
     li {
         display: inline-block;
         margin-right: 10px;
-
         a {
             padding: 5px 15px;
             text-decoration: none;
-            color: $white;
+            color: $main-color;
             font: normal 100% $sans-droid;
             font-size: 13px;
             font-weight: 700;
@@ -43,8 +41,8 @@
             transition: all 0.3s ease 0s;
 
             &:hover {
-                border-bottom: 3px solid $white;
-                color: $white;
+                border-bottom: 3px solid $main-color;
+                color: $main-color;
                 text-shadow: none;
             }
 
@@ -63,11 +61,9 @@
 
         &:hover a {
             color: transparent;
-            text-shadow: 0 0 1px $black;
+            text-shadow: 0 0 1px $second-color;
         }
-
     }
-
 }
 
 .main-menu ul {
@@ -94,7 +90,6 @@
 }
 
 .social {
-
     img {
         vertical-align: middle;
     }
@@ -107,7 +102,7 @@
 
     p {
         display: inline;
-        color: $white;
+        color: $main-color;
         font: normal 100% $sans-open;
         font-size: 14px;
         font-weight: 400;
@@ -118,12 +113,12 @@
 
     &:hover a {
         color: transparent;
-        text-shadow: 0 0 1px $black;
+        text-shadow: 0 0 1px $text-second-color;
     }
 
     a:hover {
-        border-bottom: 3px solid $white;
-        color: $white;
+        border-bottom: 3px solid $main-color;
+        color: $main-color;
         text-shadow: none;
     }
 
@@ -144,13 +139,12 @@
     padding-left: 20px;
     padding-right: 10px;
 
-    .ticket {
+    .battons {
         list-style: none;
         margin: auto;
         text-decoration: none;
-        color: $red;
+        color: $primary-bg-color;
         font: normal 100% $sans-droid;
-        /*font-family: "Droid Sans", sans-serif;*/
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;

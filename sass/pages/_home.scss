@@ -1,0 +1,206 @@
+//1
+.preview {
+    position: relative;
+    min-height: 700px;
+    .main-slider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    &-slide {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 700px;
+        padding: 103px 0 100px;
+        position: relative;
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        padding: 170px 0 0 0;
+        z-index: 2;
+    }
+    .bottom_line  {
+        width: 100%;
+        height: 3px;
+        background: $popup-color;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        &:before {
+            content: '';
+            display: block;
+            width: 75%;
+            height: 3px;
+            background: $primary-bg-color;
+        }
+    }
+}
+
+
+//2
+.introducing-section {
+    padding-top: 103px;
+    .container {
+        padding-bottom: 110px;
+        border-bottom: 1px solid $scroll-bar-bg;
+    }
+    .heading {
+        margin-bottom: 0;
+    }
+    &-slider {
+        .card {
+            .container-img {
+                position: relative;
+                overflow: hidden;
+            }
+            img {
+                display: block;
+            }
+            .text-card {
+                padding: 17px 28px 26px 28px;
+                background-color: $primary-bg-color;
+                position: absolute;
+                bottom: -50px;
+                width: 100%;
+                @include transition(bottom 0.3s ease-in-out);
+                &:hover {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.upcoming-section {
+    padding: 70px 0 100px;
+    img {
+        display: block;
+    }
+    .flex-wrap {
+        display: flex;
+        margin-bottom: 5px;
+    }
+    .poster {
+        padding-left: 79px;
+        flex-grow: 1;
+        h3 {
+            padding: 20px 0 0;
+            margin:0 0 20px;
+        }
+        &-list {
+            overflow: hidden;
+            padding: 0;
+            margin: 0 0 30px;
+        }
+        dt {
+            float: left;
+            clear: left;
+            font: $sans-droid;
+            margin-top: 0;
+        }
+        dd {
+            font: $sans-droid;
+            margin: 0 0 15px 60px;
+            &:before {
+                display: inline-block;
+                margin: 0 5px;
+                content: ":";
+            }
+        }
+    }
+}
+
+.video-section {
+    padding: 70px 0 100px;
+    .heading {
+        margin-bottom: 0;
+    }
+    .slide {
+        .container-video {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.members {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 24px;
+    margin: 0 auto;
+}
+
+.introduction {
+    max-width: 206px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+//3
+.list-texas {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-top: 24px;
+    margin: 0 auto;
+}
+
+//4
+.background-cantus {
+    min-height: 373px;
+    background: url(../images/cantus.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+//5
+.popular-insta {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 24px;
+    .popular {
+        margin: 0;
+        padding: 0;
+        list-style: inside decimal-leading-zero;
+        column-count: 3;
+        .song-item {
+            padding: 10px 0 14px;
+            margin-right: 60px;
+            border-bottom: 1px solid $scroll-bar-bg;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                @include transition(0.35s);
+                &:hover {
+                    color: $primary-bg-color;
+                }
+            }
+        }
+    }
+}
+
+.insta-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 24px;
+    max-width: 400px;
+    width: 100%;
+}

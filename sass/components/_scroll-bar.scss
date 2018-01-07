@@ -1,0 +1,15 @@
+.scroll {
+    &-bar {
+        width: 100%;
+        height: 4px;
+        background: $scroll-bar-bg;
+        position: relative;
+    }
+    &-dragger {
+        width: 20%;
+        height: 4px;
+        background: $primary-bg-color;
+        position: absolute;
+        left: 15px;
+    }
+}

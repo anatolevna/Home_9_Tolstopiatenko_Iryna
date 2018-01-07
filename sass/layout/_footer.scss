@@ -8,7 +8,7 @@
     overflow: hidden;
 
     h4 {
-        color: $white;
+        color: $main-color;
         font: normal 100% $serif-oswald;
         font-size: 32px;
         font-weight: 500;
@@ -16,7 +16,7 @@
     }
 
     p {
-        color: $white;
+        color: $main-color;
         font: normal 100% $sans-droid;
         font-size: 22px;
         font-weight: 400;
@@ -40,7 +40,7 @@
         a {
             padding: 5px 15px;
             text-decoration: none;
-            color: $hex-gray;
+            color: $text-second-color;
             font: normal 100% $sans-droid;
             font-size: 13px;
             font-weight: 400;
@@ -51,8 +51,8 @@
             transition: all 0.3s ease 0s;
 
             &:hover {
-                border-bottom: 3px solid $hex-gray;
-                color: $white;
+                border-bottom: 3px solid $text-second-color;
+                color: $main-color;
                 text-shadow: none;
             }
 
@@ -71,7 +71,7 @@
 
         &:hover a {
             color: transparent;
-            text-shadow: 0 0 1px $black;
+            text-shadow: 0 0 1px $second-color;
         }
     }
 }
@@ -87,7 +87,7 @@
 footer {
 
     p {
-        color: $hex-gray;
+        color: $botton-background;
         font: normal 100% $sans-droid;
         font-size: 13px;
         font-weight: 400;
@@ -95,7 +95,7 @@ footer {
         letter-spacing: 0.65px;
         text-align: center;
         span {
-            color: #df001f;
+            color: $primary-bg-color;
             font: normal 100% $cursive-great;
             font-size: 28px;
             font-weight: 400;
